@@ -9,7 +9,8 @@
 }
 html{
     background: black url("pexels.jpg") center center no-repeat;
-    color: lightgoldenrodyellow;
+    color: white;
+    
 }
 body{
     display: block;
@@ -19,37 +20,44 @@ body{
     place-items: center;
     padding: 0;
     margin: 0;
+    @media(min-width:500px){ display:grid;} 
 }
-/* @media(min-width:1200px){body { display:grid;} } */
+/* */
 .Container{
     background: rgba(79, 109, 245, 0.8);
     padding: 1rem;
     font-size:clamp(1rem, 2vw, 2rem);
     line-height: 1.5em;
+    @media(min-width:300px){ margin:2vh; padding: 2rem; border-radius: 2rem;}
+    @media(min-width:500px){ margin:7vw; padding: 3rem; }
+
 }
-@media(min-width:300px){ .Container{margin:2vh; padding: 2rem; border-radius: 2rem;}}
-@media(min-width:500px){ .Container{margin:7vw; padding: 3rem; }}
+
 
     header{}
         .Avatar{
             display: block; width: 120px; height: auto; 
-            margin: 0 1em 1em 0; border-radius: 50%;}
+            margin: 0 1em 1em 0; border-radius: 50%;
             @media(min-width:400px){.Avatar { float:left;} }
             @media(min-width:800px){.Avatar { width:clamp(120px, 10vw,  12em);} }
+        }
+            
         .TitlulPaginii{ display: block; margin: 0; font-size: clamp(2rem, 6vw, 4rem); 
             line-height: 1em;
         }
-        .DescrierePrincipala{ display: block; margin:0.5em;}
+        .DescrierePrincipala{ display: block; margin:0.5em;
+            @media(min-width: 500px){  margin-bottom: 0.5em; }
+        }
 
     main{ clear:both;}
     /* @media(min-width:1200px){main{display:grid; grid-template-columns: 1fr 1fr; }}  */
-        .ListaLinkuri{display: block; margin: 0; padding: 0; border-top: 1px solid #fff;}
-        @media(min-width:880px){ 
-            .ListaLinkuri{display: grid; grid-template-columns: 1fr 1fr; }
+        .ListaLinkuri{display: block; margin: 0; padding: 0; border-top: 1px solid #fff;
+            @media(min-width:880px){ display: grid; grid-template-columns: 1fr 1fr; }
         }
             .ListaItem{display: block; margin: 0; padding: 0; border-bottom: 1px solid #fff;}
-                .ListaLink{display: block; padding: 0.5em; color: #fff; text-decoration: none;}
-                .ListaLink:hover{ background: white; color:black; }
+                .ListaLink{display: block; padding: 0.5em; color: #fff; text-decoration: none;
+                    &:hover{ background: white; color:black; }
+                }
                     .ListaTitlu{ display: block; margin:0; padding: 0; font-size: 0.8em; line-height: 1.5em;}
                     .ListaText{ 
                         display: block; margin:0; padding: 0; font-size: 0.6em; line-height: 1.5em;
