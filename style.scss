@@ -10,7 +10,7 @@
 html{
     background: black url("pexels.jpg") center center no-repeat;
     color: white;
-    
+
 }
 body{
     display: block;
@@ -43,6 +43,12 @@ body{
         }
             
         .TitlulPaginii{ display: block; margin: 0; font-size: clamp(2rem, 6vw, 4rem); 
+            line-height: 1em;
+        }
+        .SubTitlulPaginii{
+            margin:10px;
+            padding: 0;
+            font-size: clamp(0.5rem, 2vw, 2rem;
             line-height: 1em;
         }
         .DescrierePrincipala{ display: block; margin:0.5em;

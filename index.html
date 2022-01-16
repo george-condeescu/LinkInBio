@@ -19,11 +19,12 @@
         
         <link rel="stylesheet" href="style.css"/>
     </head>
-    <body>
-        <div class="Container">
+    <body itemscope="" itemtype="https://schema.org/Profile">
+        <div class="Container"  itemscope itemtype="https://schema.org/Person">
             <header>
-                <img src="Viorel-Mocanu.png" alt="Imaginea mea " height="200" width="150" class="Avatar">
-                <h1 class="TitlulPaginii"><strong>George Condeescu</strong></h1>
+                <img src="Viorel-Mocanu.png" alt="Imaginea mea " height="200" width="150" class="Avatar" itemprop="image">
+                <h1 class="TitlulPaginii" itemprop="name"><strong>George Condeescu</strong></h1>
+                <h2 class="SubTitlulPaginii" itemprop="jobTitle">Consultant digital</h2>
                 <p class="DescrierePrincipala">Toate link-urile mele, profilurile, grupurile pe care sunt activ, etc.</p>
             </header>
             <main>
@@ -33,54 +34,53 @@
                         <a href="http://www.cjteleorman.ro/" class="ListaLink" title="Intra pe siteul meu"
                         target="_blank" rel="noreferrer noopener">
                             <h2 class="ListaTitlu"> 🌐 My website</h2>
-                            <p class="ListaText">http://www.cjteleorman.ro/</p>
+                            <p class="ListaText" itemprop="url">http://www.cjteleorman.ro/</p>
                         </a>
                     </li>
                     <li class="ListaItem">
                         <a href="https://www.youtube.com/channel/UC0Xw2Gty5_cCA4iDa0gVq5Q" class="ListaLink" title="Canalul meu de youtube"
                         target="_blank" rel="noreferrer noopener">
                             <h2 class="ListaTitlu">📺 Youtube</h2>
-                            <p class="ListaText">https://www.youtube.com/channel/UC0Xw2Gty5_cCA4iDa0gVq5Q</p>
+                            <p class="ListaText" itemprop="url">https://www.youtube.com/channel/UC0Xw2Gty5_cCA4iDa0gVq5Q</p>
                         </a>
                     </li>
                     <li class="ListaItem">
                         <a href="https://www.linkedin.com/in/george-condeescu-390b3052/" class="ListaLink" title="Contul meu de linkedin"
                         target="_blank" rel="noreferrer noopener">
                             <h2 class="ListaTitlu">🎯 LinkedIn</h2>
-                            <p class="ListaText">https://www.linkedin.com/in/george-condeescu-390b3052/</p>
+                            <p class="ListaText" itemprop="url">https://www.linkedin.com/in/george-condeescu-390b3052/</p>
                         </a>
                     </li>
                     <li class="ListaItem">
                         <a href="https://www.facebook.com/george.condeescu.1/" class="ListaLink" title="Contul meu de facebook"
                         target="_blank" rel="noreferrer noopener">
                             <h2 class="ListaTitlu">🐱 Facebook</h2>
-                            <p class="ListaText">https://www.facebook.com/george.condeescu.1/</p>
+                            <p class="ListaText" itemprop="url">https://www.facebook.com/george.condeescu.1/</p>
                         </a>
                     </li>
                     <li class="ListaItem">
                         <a href="https://www.instagram.com/georgecondeescu/" class="ListaLink" title="Contul meu de instagram" target="_blank" rel="noreferrer noopener">
                             <h2 class="ListaTitlu">🐿 Instagram</h2>
-                            <p class="ListaText">https://www.instagram.com/georgecondeescu/</p>
+                            <p class="ListaText" itemprop="url">https://www.instagram.com/georgecondeescu/</p>
                         </a>
                     </li>
                     <li class="ListaItem">
                         <a href="https://twitter.com/CondeescuGeorge" class="ListaLink" title="Contul meu de twitter" target="_blank" rel="noreferrer noopener">
                             <h2 class="ListaTitlu">🐐 Twitter</h2>
-                            <p class="ListaText">https://twitter.com/CondeescuGeorge</p>
+                            <p class="ListaText" itemprop="url">https://twitter.com/CondeescuGeorge</p>
                         </a>
                     </li>
                     <li class="ListaItem">
                         <a href="https://www.pinterest.com/gcondeescu" class="ListaLink" title="Contul meu de pinterest"
                         target="_blank" rel="noreferrer noopener">
                             <h2 class="ListaTitlu">🐐 Pinterest</h2>
-                            <p class="ListaText">https://www.pinterest.com/gcondeescu</p>
+                            <p class="ListaText" itemprop="url">https://www.pinterest.com/gcondeescu</p>
                         </a>
                     </li>
                     <li class="ListaItem">
-                        <a href="https://www.pinterest.com/gcondeescu" class="ListaLink" title="Contul meu de pinterest"
-                        target="_blank" rel="noreferrer noopener">
-                            <h2 class="ListaTitlu">🐐 Pinterest</h2>
-                            <p class="ListaText">https://www.pinterest.com/gcondeescu</p>
+                        <a href="mailto:george.condeescu@gmail.com" class="ListaLink" title="Email">
+                            <h2 class="ListaTitlu">🐐 Email</h2>
+                            <p class="ListaText" itemprop="email">george.condeescu@gmail.com</p>
                         </a>
                     </li>
                 </ul>
@@ -88,5 +88,14 @@
             <footer></footer>
             
         </div>
+        <div>
+            <span >Jane Doe</span>
+            <img src="janedoe.jpg"  alt="Photo of Jane Doe"/>
+            <span >Professor</span>
+            <a href="mailto:jane-doe@xyz.edu" >
+              jane-doe@xyz.edu</a>
+            Jane's home page:
+            <a href="http://www.janedoe.com" >janedoe.com</a>
+          </div>
     </body>
 </html>
