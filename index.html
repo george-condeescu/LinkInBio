@@ -23,7 +23,22 @@
     <body itemscope="" itemtype="https://schema.org/Profile">
         <div class="Container"  itemscope itemtype="https://schema.org/Person">
             <header>
-                <img src="Viorel-Mocanu.png" alt="Imaginea mea " height="200" width="150" class="Avatar" itemprop="image">
+                <picture>
+                    <source type="image/webp" srcset="
+                    viorel-mocanu-112.webp 112w,
+                    viorel-mocanu-192.webp 192w"
+                    sizes="
+                    (max-width:929px) 112px,
+                    (min-width:930px) clamp(130px, 14vw, 12rem)">
+                    <source srcset="
+                    viorel-mocanu-112.jpg 112w,
+                    viorel-mocanu-192.jpg 192w"
+                    sizes="
+                    (max-width:929px) 112px,
+                    (min-width:930px) clamp(130px, 14vw, 12rem)">
+                    <img src="Viorel-Mocanu.png" alt="Imaginea mea " height="200" width="150" class="Avatar" itemprop="image">
+                </picture>
+                
                 <h1 class="TitlulPaginii" itemprop="name"><strong>George Condeescu</strong></h1>
                 <h2 class="SubTitlulPaginii" itemprop="jobTitle">Consultant digital</h2>
                 <p class="DescrierePrincipala">Toate link-urile mele, profilurile, grupurile pe care sunt activ, etc.</p>
