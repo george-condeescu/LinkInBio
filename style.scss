@@ -36,19 +36,22 @@ body{
 
     header{}
         .Avatar{
-            display: block; width: 120px; height: auto; 
-            margin: 0 1em 1em 0; border-radius: 50%;
+            display: block; width: 112px; height: auto; 
+            margin: 0 1em 1em 0; 
             @media(min-width:400px){.Avatar { float:left;} }
             @media(min-width:800px){.Avatar { width:clamp(120px, 10vw,  12em);} }
+            img{ display: block;
+                width:100%; height:auto; border-radius: 50%;
+            }
         }
             
-        .TitlulPaginii{ display: block; margin: 0; font-size: clamp(2rem, 6vw, 4rem); 
+        .TitlulPaginii{ display: block; margin: 0; font-size: clamp(2rem, 5vw, 4rem); 
             line-height: 1em;
         }
         .SubTitlulPaginii{
             margin:10px;
             padding: 0;
-            font-size: clamp(0.5rem, 2vw, 2rem;
+            font-size: clamp(1rem, 2vw, 2rem);
             line-height: 1em;
         }
         .DescrierePrincipala{ display: block; margin:0.5em;
